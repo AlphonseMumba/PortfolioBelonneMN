@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belonne Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>I Am <span>Belonne</span></h1>
+                <p>Capturing Moments, Creating Memories.</p>
+                <a href="#" class="btn">TAKE A SHOT</a>
+            </div>
+            <div class="hero-image">
+                <img src="profil_img/profile1.jpg" alt="Photographer with camera">
+            </div>
+        </section>
+
+        <section class="story-section">
+            <div class="story-image">
+                <img src="profil_img/profile2.jpg" alt="Photographer">
+            </div>
+            <div class="story-content">
+                <h2>How This Story Began</h2>
+                <p>Once upon a time, my journey with Photography began like a whisper, delicate and barely noticeable. Those first hesitant steps transformed my perception of the world around me.</p>
+                <p>Hardships became characters, my camera a faithful friend helping to frame and narrate their stories. The magic began to unfold as I learned that in every shot, even in the mundane, there was a story waiting to be told.</p>
+                <p>The year 2015 marked my professional journey as a photographer, setting me on a path to explore beauty in all forms.</p>
+                <div class="see-more">
+                    <a href="about.html" class="btn">SEE MORE</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="section-title">Something That We Have</h2>
+            <div class="gallery-container">
+                <div class="gallery" id="gallery">
+                    <!-- Gallery images will be loaded dynamically -->
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-control prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="gallery-control next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <a href="project.html" class="btn">SEE MORE</a>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="section-title">People Deal With Us</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <img src="clients_img/client_img_01.jpg" alt="Client 1">
+                    <div class="testimonial-action">
+                        <a href="#" class="client-detail" data-client="client_01">See Detail</a>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="clients_img/client_img_02.jpg" alt="Client 2">
+                    <div class="testimonial-action">
+                        <a href="#" class="client-detail" data-client="client_02">See Detail</a>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="clients_img/client_img_03.jpg" alt="Client 3">
+                    <div class="testimonial-action">
+                        <a href="#" class="client-detail" data-client="client_03">See Detail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-form">
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your email">
+                </div>
+                <button class="btn">SEND</button>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Photo Visual Photography</p>
+        </div>
+    </footer>
+
+    <!-- Modal for client testimonials -->
+    <div id="testimonialModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img id="modalClientImage" src="" alt="Client">
+                <h3 id="modalClientName"></h3>
+                <p id="modalClientTestimonial"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Belonne Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Get In <span>Touch</span></h1>
+                <p>Let's Create Something Beautiful Together.</p>
+            </div>
+            <div class="hero-image">
+                <img src="profil_img/profile1.jpg" alt="Photographer portrait">
+            </div>
+        </section>
+
+        <section class="contact-page">
+            <h2 class="section-title">Contact Me</h2>
+            
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="Enter subject">
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn">SEND MESSAGE</button>
+                    </div>
+                    <div id="form-status"></div>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>123 Photography Street<br>Paris, France 75001</p>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+33 123 456 789</p>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@belonnephotography.com</p>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div class="contact-map">
+                <!-- Placeholder for map -->
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #444;">
+                    <p>Map Location Here</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Photo Visual Photography</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

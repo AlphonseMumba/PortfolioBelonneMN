@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Belonne Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>About <span>Belonne</span></h1>
+                <p>Passion, Vision, and Creative Excellence.</p>
+            </div>
+            <div class="hero-image">
+                <img src="profil_img/profile1.jpg" alt="Photographer portrait">
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="profil_img/profile2.jpg" alt="Photographer in action">
+                </div>
+                <div class="about-text">
+                    <h2>My Story</h2>
+                    <p>Hello, I'm Belonne, a professional photographer with a passion for capturing life's most beautiful moments. My journey in photography began in 2015, but my love for visual storytelling started much earlier.</p>
+                    <p>Growing up, I was always fascinated by how a single image could tell a powerful story. This fascination led me to explore photography as an art form, constantly refining my skills and developing my unique style.</p>
+                    <p>I believe that every person, every place, and every moment has a story worth telling. My mission is to translate these stories into compelling visual narratives that evoke emotion and preserve memories.</p>
+                    <p>Over the years, I've had the privilege of working with diverse clients, from individuals seeking portrait photography to businesses requiring commercial work. Each project has contributed to my growth as a photographer and storyteller.</p>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h2>My Expertise</h2>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>Portrait Photography</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>Landscape Photography</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>Event Photography</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>Photo Editing</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 92%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-philosophy">
+                <h2>My Photography Philosophy</h2>
+                <p>I believe that photography is more than just taking pictures—it's about capturing moments that tell a story. My approach focuses on authenticity, seeking to reveal the true essence of my subjects rather than creating artificial poses.</p>
+                <p>Every shoot is a collaborative experience. I work closely with my clients to understand their vision and bring it to life through my lens. My goal is not just to deliver photos, but to create an experience that results in images that you'll treasure forever.</p>
+                <p>I'm particularly drawn to natural light photography, finding beauty in how light interacts with subjects in different environments. This approach adds a timeless quality to my work that feels organic and genuine.</p>
+            </div>
+
+            <div class="testimonials">
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial">
+                        <img src="clients_img/client_img_01.jpg" alt="Client 1">
+                        <div class="testimonial-action">
+                            <a href="#" class="client-detail" data-client="client_01">See Detail</a>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <img src="clients_img/client_img_02.jpg" alt="Client 2">
+                        <div class="testimonial-action">
+                            <a href="#" class="client-detail" data-client="client_02">See Detail</a>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <img src="clients_img/client_img_03.jpg" alt="Client 3">
+                        <div class="testimonial-action">
+                            <a href="#" class="client-detail" data-client="client_03">See Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Photo Visual Photography</p>
+        </div>
+    </footer>
+
+    <!-- Modal for client testimonials -->
+    <div id="testimonialModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img id="modalClientImage" src="" alt="Client">
+                <h3 id="modalClientName"></h3>
+                <p id="modalClientTestimonial"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
