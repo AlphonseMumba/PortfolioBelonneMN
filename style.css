@@ -335,12 +335,34 @@ nav a:hover {
     background-color: var(--accent-color);
 }
 
-footer {
+.footer {
+    background-color: #79bebb;
     text-align: center;
-    padding: 20px 0;
-    background-color: var(--accent-color);
-    color: white;
-    font-size: 0.9rem;
+    padding: 10px 0 10px 0;
+}
+
+.footer-socials {
+    margin-bottom: 15px;
+}
+
+.footer-socials a {
+    display: inline-block;
+    margin: 0 12px;
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.2s;
+    vertical-align: middle;
+}
+
+.footer-socials a:hover {
+    color: #fabe2e;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
 }
 
 /* Project Page Styles */
@@ -698,6 +720,14 @@ footer {
         min-height: 300px;
     }
 
+    .footer-text {
+        font-size: 1.1em;
+    }
+    .footer-socials a {
+        margin: 0 7px;
+        font-size: 1.2em;
+    }
+
     .testimonial {
         width: 100%;
     }
@@ -749,3 +779,4 @@ footer {
         background: rgba(255, 255, 255, 0.6);
     }
 }
+
