@@ -615,6 +615,8 @@ footer {
 /* Lightbox */
 .lightbox {
     display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -626,9 +628,11 @@ footer {
 
 .lightbox-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    width: 45%;
+    height: 90%;
 }
 
 .lightbox-image {
@@ -644,9 +648,13 @@ footer {
     font-size: 30px;
     cursor: pointer;
 }
+.lightbox-description{
+    max-width: 45%;
+    color: white;
+    font-size: 14px;
+}
 
 .lightbox-caption {
-    position: absolute;
     bottom: 20px;
     left: 0;
     width: 100%;

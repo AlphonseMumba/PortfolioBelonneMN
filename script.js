@@ -1,71 +1,87 @@
 // Project data structure
 const projectsData = [
     {
-        name: "Tribu Pende",
+        name: "Exploration des merveilles de la tribu Pende",
         id: "project_01",
-        date: "June 2023",
-        description: "Exploration des merveilles de la tribu Pende",
+        date: "Janvier 2025",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
         images: [
             {
                 id: "project_01_img_01",
                 link: "./Project_01/project_01_img_01.png",
-                description: "Tribu pende"
+                title: "Tribu pende",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
+
             },
             {
                 id: "project_01_img_02",
                 link: "./Project_01/project_01_img_02.png",
-                description: "Tribu pende"
+                title: "Tribu pende",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             },
             {
                 id: "project_01_img_03",
                 link: "./Project_01/project_01_img_03.png",
-                description: "Tribu pende"
+                title: "Tribu pende",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
+            },
+            {
+                id: "project_01_img_04",
+                link: "./Project_01/project_01_img_04.png",
+                title: "Masque Tundu",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             }
         ]
     },
     {
-        name: "Concert danse Afro",
+        name: "la beauté de la danse Africaine",
         id: "project_02",
         date: "April 2023",
-        description: "la beauté de la danse Africaine",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
         images: [
             {
                 id: "project_02_img_01",
                 link: "./Project_02/project_02_img_01.png",
-                description: "Danse afro"
+                title: "Danse afro",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             },
             {
                 id: "project_02_img_02",
                 link: "./Project_02/project_02_img_02.png",
-                description: "Danse afro"
+                title: "Danse afro",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             },
             {
                 id: "project_02_img_03",
                 link: "./Project_02/project_02_img_03.png",
-                description: "Danse afro"
+                title: "Danse afro",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             }
         ]
     },
     /*{
-        name: "Portrait Collection",
+        name: "Capturing the essence and emotions of people",
         id: "project_03",
         date: "March 2023",
-        description: "Capturing the essence and emotions of people",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
         images: [
             {
                 id: "project_03_img_01",
                 link: "./Project_03/project_03_img_01.png",
-                description: "Young woman portrait"
+                title: "Young woman portrait",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             },
             {
                 id: "project_03_img_02",
                 link: "./Project_03/project_03_img_02.png",
-                description: "Man with intense gaze"
+                title: "Man with intense gaze",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             },
             {
                 id: "project_03_img_03",
                 link: "./Project_03/project_03_img_03.png",
-                description: "Smiling young man"
+                title: "Smiling young man",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             }
         ]
     }*/
@@ -119,7 +135,7 @@ function loadHomeGallery() {
 
         const img = document.createElement('img');
         img.src = image.link;
-        img.alt = image.description;
+        img.alt = image.title;
 
         div.appendChild(img);
         gallery.appendChild(div);
@@ -205,7 +221,6 @@ function loadProjects() {
             </div>
             <div class="project-info">
                 <h3>${project.name}</h3>
-                <p>${project.description}</p>
                 <div class="project-date">${project.date}</div>
                 <a href="project-detail.html?id=${project.id}" class="btn">View Project</a>
             </div>
@@ -254,13 +269,13 @@ function loadProjectDetail() {
         const imageContainer = document.createElement('div');
         imageContainer.className = 'project-detail-image';
         imageContainer.innerHTML = `
-            <img src="${image.link}" alt="${image.description}" data-id="${image.id}">
-            <div class="image-overlay">${image.description}</div>
+            <img src="${image.link}" alt="${image.title}" data-id="${image.id}">
+            <div class="image-overlay">${image.title}</div>
         `;
         
         // Add click event for lightbox
         imageContainer.addEventListener('click', function() {
-            openLightbox(image.link, image.description);
+            openLightbox(image.link, image.title, image.description);
         });
         
         projectGallery.appendChild(imageContainer);
@@ -273,14 +288,16 @@ function loadProjectDetail() {
 }
 
 // Open lightbox
-function openLightbox(src, caption) {
+function openLightbox(src, caption, description) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
     const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxDescription = document.getElementById('lightbox-description');
     
     lightboxImage.src = src;
     lightboxCaption.textContent = caption;
-    lightbox.style.display = 'block';
+    lightboxDescription.textContent = description;
+    lightbox.style.display = 'flex';
 }
 
 // Close lightbox
