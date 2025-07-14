@@ -252,11 +252,167 @@ function loadProjects() {
                 <h3>${project.name}</h3>
                 <div class="project-date">${project.date}</div>
                 <a href="project-detail.html?id=${project.id}" class="btn">View Project</a>
+                <button class="btn btn-download" onclick="downloadProject('${project.id}')"><i class="fas fa-download"></i>Download</button>
             </div>
         `;
         
         projectsContainer.appendChild(projectCard);
     });
+}
+
+// Download project as PDF in a robust and modern way
+async function downloadProject(projectId) {
+    const project = projectsData.find(p => p.id === projectId);
+    if (!project) return;
+
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    // --- Title Page ---
+    doc.setFontSize(24);
+    doc.text(project.name.toUpperCase(), 20, 30);
+
+    doc.setFontSize(12);
+    doc.text(`Date: ${project.date}`, 20, 50);
+    doc.text('Photographer: Belonne MITOMBE', 20, 60);
+
+    // --- Description ---
+    doc.setFontSize(14);
+    doc.text('DESCRIPTION', 20, 80);
+    doc.setFontSize(11);
+    const splitDescription = doc.splitTextToSize(project.description, 170);
+    doc.text(splitDescription, 20, 90);
+
+    let yPosition = 110 + (splitDescription.length * 6);
+
+    // --- Helper to load image as dataURL ---
+    function loadImageAsDataURL(url) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.onload = function() {
+                try {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0);
+                    const imgData = canvas.toDataURL('image/jpeg', 0.8);
+                    resolve(imgData);
+                } catch (err) {
+                    reject(err);
+                }
+            };
+            img.onerror = function(err) {
+                reject(err);
+            };
+            img.src = url;
+        });
+    }
+
+    // --- Add images with descriptions ---
+    for (let i = 0; i < project.images.length; i++) {
+        const image = project.images[i];
+
+        // On new page if not enough room, or if not first image
+        if (i > 0 || yPosition > 200) {
+            doc.addPage();
+            yPosition = 20;
+        }
+
+        // Try to load and add the image
+        try {
+            const imgData = await loadImageAsDataURL(image.link);
+            doc.addImage(imgData, 'JPEG', 20, yPosition, 80, 60);
+
+            doc.setFontSize(12);
+            doc.text(`Image ${i + 1}:`, 110, yPosition + 10);
+            doc.setFontSize(10);
+            const splitDesc = doc.splitTextToSize(image.description, 80);
+            doc.text(splitDesc, 110, yPosition + 20);
+
+            yPosition += 80;
+        } catch (error) {
+            // If image fails, just add the description and error note
+            doc.setFontSize(12);
+            doc.text(`Image ${i + 1}: ${image.description}`, 20, yPosition);
+            doc.setFontSize(10);
+            doc.text('[Image could not be loaded]', 20, yPosition + 10);
+            yPosition += 25;
+        }
+    }
+
+    // --- Save the PDF at the end ---
+    doc.save(`${project.name.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_project.pdf`);
+}
+
+// Alternative simpler download function (if jsPDF is not available)
+function downloadProjectSimple(projectId) {
+    const project = projectsData.find(p => p.id === projectId);
+    if (!project) return;
+    
+    // Create HTML content
+    let htmlContent = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>${project.name}</title>
+            <style>
+                body { font-family: Arial, sans-serif; padding: 20px; background: #000; color: #fff; }
+                .header { text-align: center; margin-bottom: 30px; }
+                .project-title { font-size: 24px; margin-bottom: 10px; }
+                .project-info { margin-bottom: 20px; }
+                .image-section { margin-bottom: 40px; page-break-inside: avoid; }
+                .image-container { text-align: center; margin-bottom: 15px; }
+                .image-container img { max-width: 400px; height: auto; border: 2px solid #6cbab5; }
+                .image-description { font-style: italic; margin-top: 10px; }
+                @media print { body { background: #000; } }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1 class="project-title">${project.name.toUpperCase()}</h1>
+                <p>Photographer: Belonne MITOMBE</p>
+                <p>Date: ${project.date}</p>
+            </div>
+            
+            <div class="project-info">
+                <h2>Description</h2>
+                <p>${project.description}</p>
+            </div>
+            
+            <div class="images-section">
+    `;
+    
+    project.images.forEach((image, index) => {
+        htmlContent += `
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="${image.link}" alt="${image.description}">
+                </div>
+                <div class="image-description">
+                    <strong>Image ${index + 1}:</strong> ${image.description}
+                </div>
+            </div>
+        `;
+    });
+    
+    htmlContent += `
+            </div>
+        </body>
+        </html>
+    `;
+    
+    // Create and download HTML file
+    const blob = new Blob([htmlContent], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${project.name.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_project.html`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
 }
 
 // Load project details

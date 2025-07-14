@@ -395,6 +395,27 @@ footer {
     color: var(--accent-color);
 }
 
+.btn-download {
+    background-color: #4a5568;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-download:hover {
+    background-color: #2d3748;
+}
+
+.btn-download i {
+    font-size: 0.9rem;
+}
+
+.project-info .btn {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
 /* Project Detail */
 .project-detail {
     padding: 40px 0;
