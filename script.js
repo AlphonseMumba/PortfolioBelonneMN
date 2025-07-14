@@ -1,52 +1,52 @@
 // Project data structure
 const projectsData = [
     {
-        name: "Nature's Beauty",
+        name: "Tribu Pende",
         id: "project_01",
         date: "June 2023",
-        description: "Exploring the wonders of natural landscapes and wildlife",
+        description: "Exploration des merveilles de la tribu Pende",
         images: [
             {
                 id: "project_01_img_01",
                 link: "./Project_01/project_01_img_01.png",
-                description: "Serene mountain lake at sunset"
+                description: "Tribu pende"
             },
             {
                 id: "project_01_img_02",
                 link: "./Project_01/project_01_img_02.png",
-                description: "Waterfall in dense forest"
+                description: "Tribu pende"
             },
             {
                 id: "project_01_img_03",
                 link: "./Project_01/project_01_img_03.png",
-                description: "Mountain range at sunrise"
+                description: "Tribu pende"
             }
         ]
     },
     {
-        name: "Urban Exploration",
+        name: "Concert danse Afro",
         id: "project_02",
         date: "April 2023",
-        description: "Finding beauty in city architecture and street life",
+        description: "la beauté de la danse Africaine",
         images: [
             {
                 id: "project_02_img_01",
                 link: "./Project_02/project_02_img_01.png",
-                description: "City skyline at dusk"
+                description: "Danse afro"
             },
             {
                 id: "project_02_img_02",
                 link: "./Project_02/project_02_img_02.png",
-                description: "Busy street with light trails"
+                description: "Danse afro"
             },
             {
                 id: "project_02_img_03",
                 link: "./Project_02/project_02_img_03.png",
-                description: "Modern architecture abstract"
+                description: "Danse afro"
             }
         ]
     },
-    {
+    /*{
         name: "Portrait Collection",
         id: "project_03",
         date: "March 2023",
@@ -68,7 +68,7 @@ const projectsData = [
                 description: "Smiling young man"
             }
         ]
-    }
+    }*/
 ];
 
 // Client testimonials data
@@ -163,7 +163,7 @@ function rotateGallery(direction) {
     // Calculate new positions
     if (direction === 'left') {
         // Previous image becomes center
-        const newCenterIndex = (leftIndex === 0) ? images.length - 1 : leftIndex - 1;
+        const newCenterIndex = (leftIndex === 0) ? images.length - 1 : leftIndex;
         const newLeftIndex = (newCenterIndex === 0) ? images.length - 1 : newCenterIndex - 1;
         const newRightIndex = centerIndex;
 
@@ -172,7 +172,7 @@ function rotateGallery(direction) {
         images[newRightIndex].classList.add('right');
     } else {
         // Next image becomes center
-        const newCenterIndex = (rightIndex === images.length - 1) ? 0 : rightIndex + 1;
+        const newCenterIndex = (rightIndex === images.length - 1) ? 0 : rightIndex;
         const newRightIndex = (newCenterIndex === images.length - 1) ? 0 : newCenterIndex + 1;
         const newLeftIndex = centerIndex;
 
