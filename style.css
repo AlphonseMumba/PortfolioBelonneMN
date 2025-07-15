@@ -331,6 +331,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 10px 20px;
     gap: 10px;
 }
 
