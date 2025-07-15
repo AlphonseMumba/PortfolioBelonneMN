@@ -531,25 +531,6 @@ function setupClientModal() {
     });
 }
 
-// Handle form submission
-function setupContactForm() {
-    const contactForm = document.getElementById('contact-form');
-    if (!contactForm) return;
-    
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Here you would typically send the form data to a server
-        // For demo purposes, just show a success message
-        const formStatus = document.getElementById('form-status');
-        if (formStatus) {
-            formStatus.textContent = 'Message sent successfully!';
-            formStatus.style.color = '#6cbab5';
-            contactForm.reset();
-        }
-    });
-}
-
 // Dark/light mode detection
 function setupColorScheme() {
     if (window.matchMedia) {
