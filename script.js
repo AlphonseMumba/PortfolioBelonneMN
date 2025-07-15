@@ -8,19 +8,19 @@ const projectsData = [
         images: [
             {
                 id: "project_01_img_01",
-                link: "./Project_01/project_01_img_01.png",
+                link: "Project_01/project_01_img_01.png",
                 title: "Mungaji",
                 description: "L’image incarne la mémoire ancestrale, une école visuelle où chaque motif, chaque texture, devient une leçon d’histoire, de savoir et d’appartenance. En tant que photographe, je vois dans cette image une résonance profonde — un espace de dialogue entre passé et présent, tradition et création, vécu et reconquête identitaire. ",
             },
             {
                 id: "project_01_img_02",
-                link: "./Project_01/project_01_img_02.png",
+                link: "Project_01/project_01_img_02.png",
                 title: "Tundu",
                 description: " cette image engage une réflexion sur les rôles que nous jouons dans nos vies. Le masque, bien que protecteur et symbolique, révèle également les multiples facettes de l'identité humaine. Chaque individu, parfois voilé par les attentes sociales, fait face à la quête de sa véritable essence, oscillant entre ce qu'il montre et ce qu'il dissimule. Cette composition évoque un dialogue invitant à explorer les thèmes de l'identité, de la tradition et de la nature, rappelant que chaque personne porte en elle une histoire, une culture, et un profond lien avec le monde qui l’entoure."
             },
             {
                 id: "project_01_img_03",
-                link: "./Project_01/project_01_img_03.png",
+                link: "Project_01/project_01_img_03.png",
                 title: "Mungaji",
                 description: "L’image incarne la mémoire ancestrale, une école visuelle où chaque motif, chaque texture, devient une leçon d’histoire, de savoir et d’appartenance. En tant que photographe, je vois dans cette image une résonance profonde — un espace de dialogue entre passé et présent, tradition et création, vécu et reconquête identitaire. ",
             },
@@ -32,31 +32,31 @@ const projectsData = [
             },
             {
                 id: "project_01_img_05",
-                link: "./Project_01/project_01_img_05.png",
+                link: "Project_01/project_01_img_05.png",
                 title: "Mungaji",
                 description: "L’image incarne la mémoire ancestrale, une école visuelle où chaque motif, chaque texture, devient une leçon d’histoire, de savoir et d’appartenance. En tant que photographe, je vois dans cette image une résonance profonde — un espace de dialogue entre passé et présent, tradition et création, vécu et reconquête identitaire. ",
             },
             {
                 id: "project_01_img_06",
-                link: "./Project_01/project_01_img_06.png",
+                link: "Project_01/project_01_img_06.png",
                 title: "Tenu Mungaji",
                 description: "l'image invite à la contemplation de l'identité et de la transformation. Ces figures, à mi-chemin entre l'homme et l'esprit, rappellent que nous sommes tous en quête d'une essence sacrée, cherchant à fusionner notre humanité avec le monde naturel. Dans le dialogue entre l'ombre et la lumière, cette scène nous pousse à réfléchir sur nos propres masques et sur les vérités que nous cachons. Ainsi, cette image n'est pas seulement une représentation visuelle, mais un appel à l'exploration intérieure, une invitation à embrasser les mystères qui façonnent notre existence.",
             },
             {
                 id: "project_01_img_07",
-                link: "./Project_01/project_01_img_07.png",
+                link: "Project_01/project_01_img_07.png",
                 title: "Tenu Mungaji",
                 description: " image soulève des questions sur l’authenticité et le spectacle. En portant ce costume et en adoptant cette posture, l'individu représente non seulement un symbole culturel, mais également une exploration de l'identité propre à chacun. Cela nous rappelle que, derrière chaque masque et chaque costume, se cache une histoire d'appartenance et de quête de sens. L’ambiance somber et mystique de l'image incite à réfléchir sur la relation entre l’homme et la nature, ainsi qu’à l’impact de nos ancêtres sur notre compréhension actuelle de l’identité et de la spiritualité. Ce tableau vibrant fait écho à notre recherche incessante de connexion avec des forces plus grandes que nous"
             },
             {
                 id: "project_01_img_08",
-                link: "./Project_01/project_01_img_08.png",
+                link: "Project_01/project_01_img_08.png",
                 title: "Tenu Mungaji",
                 description: "image soulève des questions sur l’authenticité et le spectacle. En portant ce costume et en adoptant cette posture, l'individu représente non seulement un symbole culturel, mais également une exploration de l'identité propre à chacun. Cela nous rappelle que, derrière chaque masque et chaque costume, se cache une histoire d'appartenance et de quête de sens. L’ambiance somber et mystique de l'image incite à réfléchir sur la relation entre l’homme et la nature, ainsi qu’à l’impact de nos ancêtres sur notre compréhension actuelle de l’identité et de la spiritualité. Ce tableau vibrant fait écho à notre recherche incessante de connexion avec des forces plus grandes que nous. "
             },
             {
                 id: "project_01_img_09",
-                link: "./Project_01/project_01_img_09.png",
+                link: "Project_01/project_01_img_09.png",
                 title: "Mungaji",
                 description: "À travers cette œuvre, je souhaite exprimer que la tradition n’est pas un vestige figé, mais une école vivante, un espace où chaque génération apprend, adapte et transmet ses valeurs. La pratique rituelle devient alors une leçon d’être, une source d’identité qui façonne notre perception de nousmêmes. La texture de ce costume, la posture de la figure, sont autant d’éléments qui racontent cette transmission subtile, entre passé et présent, entre sacré et contemporain. "
             }
@@ -70,19 +70,19 @@ const projectsData = [
         images: [
             {
                 id: "project_02_img_01",
-                link: "./Project_02/project_02_img_01.png",
+                link: "Project_02/project_02_img_01.png",
                 title: "Danse afro",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             },
             {
                 id: "project_02_img_02",
-                link: "./Project_02/project_02_img_02.png",
+                link: "Project_02/project_02_img_02.png",
                 title: "Danse afro",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             },
             {
                 id: "project_02_img_03",
-                link: "./Project_02/project_02_img_03.png",
+                link: "Project_02/project_02_img_03.png",
                 title: "Danse afro",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             }
@@ -96,19 +96,19 @@ const projectsData = [
         images: [
             {
                 id: "project_03_img_01",
-                link: "./Project_03/project_03_img_01.png",
+                link: "Project_03/project_03_img_01.png",
                 title: "Young woman portrait",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             },
             {
                 id: "project_03_img_02",
-                link: "./Project_03/project_03_img_02.png",
+                link: "Project_03/project_03_img_02.png",
                 title: "Man with intense gaze",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             },
             {
                 id: "project_03_img_03",
-                link: "./Project_03/project_03_img_03.png",
+                link: "Project_03/project_03_img_03.png",
                 title: "Smiling young man",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequatur velit libero minima ducimus, nesciunt officiis, expedita eveniet voluptatem ullam, dolor beatae quod omnis quae explicabo eius enim. Hic!",
             }
