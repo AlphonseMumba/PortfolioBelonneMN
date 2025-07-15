@@ -311,58 +311,49 @@ nav a:hover {
     font-size: 16px;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #444;
-    color: white;
-    border-radius: 50%;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.social-icon:hover {
-    background-color: var(--accent-color);
-}
-
 .footer {
-    background-color: #79bebb;
+    background: linear-gradient(90deg, #79bebb 0%, #6cbab5 100%);
+    color: #fff;
+    display: flex;
+    max-width: 1100px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.footer-container {
+    display: block;
     text-align: center;
-    padding: 10px 0 10px 0;
+    width: 25%;
 }
 
-.footer-socials {
-    margin-bottom: 15px;
+.footer-container a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.footer-socials a {
-    display: inline-block;
-    margin: 0 12px;
-    color: #fff;
-    font-size: 1.5em;
-    transition: color 0.2s;
-    vertical-align: middle;
+.social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-socials a:hover {
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    width: 30px;
+}
+
+.social-icons a:hover {
     color: #fabe2e;
-}
-
-.footer-text {
-    color: #fff;
-    font-size: 2em;
-    font-family: 'Segoe UI', 'Arial', sans-serif;
-    margin: 0;
+    transform: scale(1.15);
 }
 
 /* Project Page Styles */
