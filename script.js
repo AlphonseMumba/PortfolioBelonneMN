@@ -585,7 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentPage === 'index.html' || currentPage === '') {
         loadHomeGallery();
     } else if (currentPage === 'project.html') {
-        loadProjects();
+        document.addEventListener('DOMContentLoaded', loadProjects());;
     } else if (currentPage === 'project-detail.html') {
         loadProjectDetail();
     } else if (currentPage === 'contact.html') {
