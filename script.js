@@ -120,21 +120,21 @@ const projectsData = [
 const clientsData = [
     {
         id: "client_01",
-        name: "Sarah Johnson",
+        name: "John Doe",
         image: "clients_img/client_img_01.jpg",
-        testimonial: "Working with Belonne was an absolute pleasure. They captured moments I didn't even realize were happening. The photos are stunning and I will cherish them forever."
+        testimonial: "Collaborer avec Belonne a été une expérience exceptionnelle. Il a su immortaliser des moments que je n'avais même pas conscience de vivre. Les photos sont absolument magnifiques, et je les chérirai éternellement."
     },
     {
         id: "client_02",
-        name: "Michael Chen",
+        name: "Jane Doe",
         image: "clients_img/client_img_02.jpg",
-        testimonial: "I was initially nervous about my photoshoot, but Belonne made me feel comfortable right away. Their artistic vision and attention to detail resulted in photos that exceeded my expectations."
+        testimonial: "En tant que jeune mariée, j'étais initialement nerveuse à l'idée de ma séance photo, mais Belonne m'a mise à l'aise dès le début. Sa vision artistique et son attention aux détails ont donné lieu à des photos qui ont dépassé toutes mes attentes. Chaque image capture la magie de notre journée de mariage, et je les chérirai pour toujours."
     },
     {
         id: "client_03",
-        name: "Elena Rodriguez",
+        name: "John Doe",
         image: "clients_img/client_img_03.jpg",
-        testimonial: "The way Belonne captured the essence of our family is truly remarkable. They have a gift for finding beauty in natural moments, and the result is a collection of photos that tell our story perfectly."
+        testimonial: "La manière dont Belonne a capturé l'essence de notre famille est vraiment remarquable. Il a un don pour trouver la beauté dans les moments naturels, et le résultat est une collection de photos qui racontent parfaitement notre histoire."
     }
 ];
 
