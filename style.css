@@ -714,17 +714,22 @@ nav a:hover {
         min-height: 300px;
     }
 
-    .footer {
+    .footer-nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .footer-container {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .testimonial {
+        width: 100%;
+    }
+
+    .modal {
         width: 100%;
     }
 
