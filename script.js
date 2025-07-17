@@ -554,6 +554,37 @@ function setupColorScheme() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('header');
+    if (header) {
+        const toggleBtn = document.createElement('button');
+        toggleBtn.id = 'theme-toggle-btn';
+        toggleBtn.textContent = '🌓 Mode sombre/clair';
+        toggleBtn.className = 'btn'; // utilise le style bouton du site
+
+        // Ajoute sous la navbar
+        const nav = header.querySelector('nav');
+        if (nav) {
+            nav.insertAdjacentElement('afterend', toggleBtn);
+        } else {
+            header.prepend(toggleBtn);
+        }
+
+        // Gestion du toggle
+        toggleBtn.addEventListener('click', function () {
+            document.documentElement.classList.toggle('light-theme');
+            // Sauvegarde le thème
+            localStorage.setItem('theme', document.documentElement.classList.contains('light-theme') ? 'light' : 'dark');
+        });
+
+        // Applique le thème sauvegardé
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.documentElement.classList.add('light-theme');
+        }
+    }
+});
+
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Run common setup
