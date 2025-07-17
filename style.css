@@ -765,6 +765,10 @@ nav a:hover {
     .contact-info {
         flex-direction: column;
     }
+
+    .lithbox{
+    flex-direction: column;
+}
 }
 
 @media (prefers-color-scheme: dark) {
