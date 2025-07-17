@@ -251,7 +251,7 @@ function loadProjects() {
             <div class="project-info">
                 <h3>${project.name}</h3>
                 <div class="project-date">${project.date}</div>
-                <a href="project-detail.html?id=${project.id}" class="btn">View Project</a>
+                <a href="project-detail.html?id=${project.id}" class="btn">Clic Ici !</a>
                 <button class="btn btn-download" onclick="downloadProject('${project.id}')"><i class="fas fa-download"></i>Download</button>
             </div>
         `;
