@@ -585,6 +585,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Set current year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
+
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Run common setup
