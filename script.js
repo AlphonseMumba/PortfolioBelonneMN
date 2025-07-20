@@ -533,36 +533,39 @@ function setupClientModal() {
 
 // Dark/light mode detection
 function setupColorScheme() {
-    if (window.matchMedia) {
-        const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        const handleColorSchemeChange = (e) => {
-            if (e.matches) {
-                document.documentElement.classList.add('dark');
-                document.documentElement.classList.remove('light');
-            } else {
-                document.documentElement.classList.add('light');
-                document.documentElement.classList.remove('dark');
-            }
-        };
-        
-        // Set initial value
-        handleColorSchemeChange(darkModeMediaQuery);
-        
-        // Listen for changes
-        darkModeMediaQuery.addEventListener('change', handleColorSchemeChange);
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    const savedTheme = localStorage.getItem('theme');
+    const isLight = savedTheme === 'light' || (!savedTheme && prefersLight);
+
+    if (isLight) {
+        document.documentElement.classList.add('light-theme');
+    } else {
+        document.documentElement.classList.remove('light-theme');
     }
+
+    // Listen for system changes
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+        if (e.matches) {
+            document.documentElement.classList.add('light-theme');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.documentElement.classList.remove('light-theme');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
 }
 
+// Ajout du bouton toggle et gestion du thème
 document.addEventListener('DOMContentLoaded', () => {
+    setupColorScheme();
+
     const header = document.querySelector('header');
     if (header) {
         const toggleBtn = document.createElement('button');
         toggleBtn.id = 'theme-toggle-btn';
-        toggleBtn.textContent = '🌓 Mode sombre/clair';
-        toggleBtn.className = 'btn'; // utilise le style bouton du site
+        toggleBtn.textContent = '🌓 sombre/clair';
+        toggleBtn.className = 'btn';
 
-        // Ajoute sous la navbar
         const nav = header.querySelector('nav');
         if (nav) {
             nav.insertAdjacentElement('afterend', toggleBtn);
@@ -570,33 +573,22 @@ document.addEventListener('DOMContentLoaded', () => {
             header.prepend(toggleBtn);
         }
 
-        // Gestion du toggle
         toggleBtn.addEventListener('click', function () {
             document.documentElement.classList.toggle('light-theme');
-            // Sauvegarde le thème
-            localStorage.setItem('theme', document.documentElement.classList.contains('light-theme') ? 'light' : 'dark');
+            localStorage.setItem('theme',
+                document.documentElement.classList.contains('light-theme') ? 'light' : 'dark'
+            );
         });
-
-        // Applique le thème sauvegardé
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
-            document.documentElement.classList.add('light-theme');
-        }
     }
-});
 
-// Set current year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    // Run common setup
-    setupColorScheme();
     setupClientModal();
-    
+
+    // Set current year in footer
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
     // Run page-specific setup
     const currentPage = window.location.pathname.split('/').pop();
-    
     if (currentPage === 'index.html' || currentPage === '') {
         loadHomeGallery();
     } else if (currentPage === 'project.html') {
