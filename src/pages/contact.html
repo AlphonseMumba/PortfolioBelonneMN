@@ -1,0 +1,48 @@
+<!--{"title": "Contact – Belonne Mitombe, photographe à Kinshasa", "desc": "Contactez Belonne Mitombe pour un shooting, un mariage ou un événement à Kinshasa, en RDC ou à l’international.", "page": "contact"}-->
+<section class="contact-page">
+            <h1 class="section-title">Contact-Moi !</h1>
+            
+            <div class="contact-form">
+                <form id="contact-form" action="https://formspree.io/f/xanbyowo" method="POST">
+                    <div class="form-row">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" autocomplete="name" name="name" class="form-control" placeholder="Votre nom ex: Jean Dupont" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" autocomplete="email" name="email" class="form-control" placeholder="Votre Email ex: exemple@email.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Entrer le sujet" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Entrer votre message" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <button type="submit" class="btn">Envoyer</button>
+                    </div>
+                    <div id="form-status" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <span class="ico" aria-hidden="true">📍</span>
+                    <h3>Adresse</h3>
+                    <a href="https://maps.app.goo.gl/py8X95rebAEcsqoX9">24 Novembre, Pierre Mulele<br>Gombe, Kinshasa</a>
+                </div>
+                <div class="contact-info-item">
+                    <span class="ico" aria-hidden="true">📞</span>
+                    <h3>Téléphone</h3>
+                    <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a>
+                </div>
+                <div class="contact-info-item">
+                    <span class="ico" aria-hidden="true">✉️</span>
+                    <h3>Email</h3>
+                    <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+                </div>
+            </div>
+        </section>

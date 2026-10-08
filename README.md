@@ -1,37 +1,37 @@
 # PortfolioBelonneMN
 
-Ce projet est un portfolio personnel développé pour présenter les compétences, réalisations et projets de **Belonne Mitombe**.
+Portfolio de **Belonne Mitombe**, photographe à Kinshasa. Site statique (HTML/CSS/JS sans framework), généré par un petit script Python.
 
-## Description
+## Structure
 
-PortfolioBelonneMN est une application web statique conçue avec JavaScript, HTML et CSS. Elle met en avant les expériences professionnelles, les projets réalisés et propose un moyen de contact.
+```
+src/pages/        contenu de chaque page (HTML + métadonnées SEO en 1re ligne)
+src/partials/     en-tête et pied de page partagés
+docs/data/        projects.json et clients.json (contenu éditable)
+docs/js/          modules ES : main, gallery, dialogs, contact, pdf
+docs/css/         style.css
+docs/img/         images WebP optimisées
+build.py          génère les pages HTML dans docs/ (+ sitemap.xml, robots.txt)
+```
 
-## Démo en ligne
+## Modifier le contenu
 
-Accède au portfolio ici : [GitHub Pages](https://alphonsemumba.github.io/PortfolioBelonneMN/)
+- Projets / photos / témoignages : éditer `docs/data/*.json`.
+- Textes des pages : éditer `src/pages/*.html`.
+- Coordonnées (e-mail, téléphone, réseaux) : constantes `S` en haut de `build.py`.
 
-## Technologies utilisées
+Puis lancer `python3 build.py`. Ajouter un projet dans `projects.json` crée automatiquement sa page `projet-XX.html`.
 
-- **JavaScript** – Interactivité et logique applicative
-- **HTML** – Structure des pages
-- **CSS** – Mise en forme et design
+## Prévisualiser et publier
 
-## Installation
+```bash
+cd docs && python3 -m http.server 8000   # http://localhost:8000
+```
 
-1. Clone le dépôt :
-   ```bash
-   git clone https://github.com/AlphonseMumba/PortfolioBelonneMN.git
-   ```
-2. Ouvre le dossier cloné :
-   ```bash
-   cd PortfolioBelonneMN
-   ```
-3. Ouvre le fichier `index.html` dans ton navigateur pour visualiser le portfolio.
+GitHub Pages : Settings → Pages → Branch `main`, dossier **/docs**.
 
-## Utilisation
+## À compléter
 
-Tu peux modifier les fichiers HTML, CSS et JavaScript selon tes besoins pour personnaliser le contenu du portfolio.
-
-## Contact
-
-Pour toute question ou suggestion, contacte-moi via **mumbalpha@gmail.com**.
+- Descriptions des projets (vides pour l'instant) et textes de `mentions-legales.html`.
+- Remplacer les témoignages d'exemple (John/Jane Doe) par de vrais avis.
+- Confirmer l'adresse e-mail publique.
